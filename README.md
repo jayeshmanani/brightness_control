@@ -49,12 +49,19 @@ Supports **up/down steps**, **exact percentages**, **automatic display detection
 ## 🚀 Usage
 
 ### 🔼 Increase brightness by 10%
-
 ```sh
-./brightness.sh up
+./brightness.sh u
+```
+or
+```
+./brightness.sh u
 ```
 
 ### 🔽 Decrease brightness by 10%
+```
+./brightness.sh d
+```
+or
 ```
 ./brightness.sh down
 ```
@@ -116,7 +123,11 @@ This prevents accidental black screens.
 ## 🧪 Examples
 Dim the display:
 ```
-brightness down
+brightness d
+brightness d
+```
+or 
+```
 brightness down
 ```
 
@@ -127,6 +138,10 @@ brightness 60
 ```
 
 Brighten up:
+```
+brightness u
+```
+or 
 ```
 brightness up
 ```

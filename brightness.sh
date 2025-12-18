@@ -21,10 +21,10 @@ CURRENT_PERCENT=$(echo "$CURRENT * 100" | bc | awk '{printf "%d\n", $1}')
 INPUT="$1"
 
 # Input validation for "up" / "down"
-if [ "$INPUT" = "up" ]; then
+if [ "$INPUT" = "u" ] || [ "$INPUT" = "up" ]; then
     NEW_PERCENT=$(( CURRENT_PERCENT + 10 ))
 
-elif [ "$INPUT" = "down" ]; then
+elif [ "$INPUT" = "d" ] || [ "$INPUT" = "down" ]; then
     NEW_PERCENT=$(( CURRENT_PERCENT - 10 ))
 
 # Check if input is an integer (POSIX way)
