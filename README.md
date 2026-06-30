@@ -32,7 +32,7 @@ Supports **up/down steps**, **exact percentages**, **automatic display detection
     chmod +x ~/brightness.sh
     ```
 
-3. (Optional) Add it to your PATH:
+3. (Optional) Add it to your PATH - If have sudo access:
 
     ```sh
     sudo ln -s ~/brightness.sh /usr/local/bin/brightness
@@ -43,6 +43,12 @@ Supports **up/down steps**, **exact percentages**, **automatic display detection
     ```sh
     brightness up
     ```
+4. (Optional) Add it to your Terminal Config file: ~/.zshrc - If no sudo access
+   ```
+    echo "alias br8u='~/brightness_control/brightness.sh up'" >> ~/.zshrc
+    echo "alias br8d='~/brightness_control/brightness.sh down'" >> ~/.zshrc
+    source ~/.zshrc
+   ```
 
 ---
 
